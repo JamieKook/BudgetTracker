@@ -8,7 +8,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "prestart": "npm run webpack",
-    "lite-server": "lite-server"
+    "lite-server": "lite-server",
+    "heroku-prebuild": "npm install --dev"
   },
   "repository": {
     "type": "git",
