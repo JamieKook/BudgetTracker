@@ -53,4 +53,4 @@ Github Repo:
 [https://github.com/JamieKook/BudgetTracker](https://github.com/JamieKook/BudgetTracker)
 
 Deployed App: 
-[https://aqueous-earth-88625.herokuapp.com/](https://aqueous-earth-88625.herokuapp.com/)
+[https://tranquil-cliffs-96234.herokuapp.com/](https://tranquil-cliffs-96234.herokuapp.com/)
