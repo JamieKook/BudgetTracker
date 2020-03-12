@@ -16,7 +16,7 @@ const FILES_TO_CACHE = [
   
   const STATIC_CACHE = "budget-static-cache-v1";
   const RUNTIME_CACHE = "budget-runtime-cache";
-  
+
   self.addEventListener("install", event => {
     event.waitUntil(
       caches
@@ -50,7 +50,7 @@ const FILES_TO_CACHE = [
   });
   
   self.addEventListener("fetch", event => {
-    // non GET requests are not cached and requests to other origins are not cached
+ // non GET requests are not cached and requests to other origins are not cached
     if (
       event.request.method !== "GET" ||
       !event.request.url.startsWith(self.location.origin)
