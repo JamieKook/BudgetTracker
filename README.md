@@ -32,7 +32,6 @@ The service worker also is coded to store all get calls to the transaction api. 
 ### Offline data storage
 In the case that the user is offline and attempts to add data to the budget tracker, the application has a temporary storage for offline data. Utilizing Indexed DB, a new database is opened and offline data is stored in a pending object store. Every time the page is loaded, the app checks for online status. If the user is connected to the internet and data has been stored in the pending database while the user was previously offline, the app will post all stored data to the transactions api allowing the user to save any transactions they have made while offline.  
 
-
 ## Coding
 
 A large portion of this app's code was provided by triology. However this code was updated to create a progressive web app using webpack and altered to use IndexDB as a temporary data store. 
@@ -54,3 +53,5 @@ Github Repo:
 
 Deployed App: 
 [https://tranquil-cliffs-96234.herokuapp.com/](https://tranquil-cliffs-96234.herokuapp.com/)
+
+
