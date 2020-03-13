@@ -88,15 +88,6 @@ function getAllTransactions(){
   });
 }; 
 
-function localStoreTransactions(transaction){
-  transactions.unshift(transaction);
-  console.log(transactions); 
-    // re-run logic to populate ui with new record
-    populateChart();
-    populateTable();
-    populateTotal();
-}
-
 getAllTransactions(); 
 
 function populateTotal() {
@@ -225,10 +216,6 @@ function sendTransaction(isAdding) {
   .catch(err => {
     // fetch failed, so save in indexed db
     saveRecord(transaction);
-    console.log('Saved in pending'); 
-    localStoreTransactions(transaction); 
-    console.log("updated"); 
-
     // clear form
     nameEl.value = "";
     amountEl.value = "";
