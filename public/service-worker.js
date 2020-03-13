@@ -67,6 +67,7 @@ const FILES_TO_CACHE = [
           return fetch(event.request)
             .then(response => {
               cache.put(event.request, response.clone());
+              console.log(response); 
               return response;
             })
             .catch(() => caches.match(event.request));

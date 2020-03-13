@@ -21,7 +21,7 @@ request.onerror = function(event) {
  
 };
 
-function saveRecord(record) {
+export function saveRecord(record) {
   // create a transaction on the pending db with readwrite access
   // access your pending object store
   // add record to your store with add method.

@@ -1,5 +1,6 @@
 let transactions = [];
 let myChart;
+export {saveRecord} from "./indexedDB"; 
 
 fetch("/api/transaction")
   .then(response => {
