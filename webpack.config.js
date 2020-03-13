@@ -33,21 +33,7 @@ const config = {
         }
       ]
     })
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.js$/, // files must end in ".js" to be transpiled
-        exclude: /node_modules/, // don't transpile code from "node_modules"
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: ["@babel/preset-env"]
-          }
-        }
-      }
-    ]
-  }
+  ]
 };
 
 module.exports = config;

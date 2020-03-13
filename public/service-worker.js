@@ -3,6 +3,7 @@ const FILES_TO_CACHE = [
     '/styles.css',
     '/index.html',
     '/dist/manifest.json',
+    '/icons/icon-192x192.png',
     '/dist/bundle.js',
     '/dist/icon_72x72.png',
     '/dist/icon_96x96.png',
